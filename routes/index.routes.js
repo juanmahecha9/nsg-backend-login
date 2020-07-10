@@ -3,7 +3,12 @@ const express = require("express");
 const control = require("../controller/index.controller");
 
 const router = express.Router(); //configurar las rutas que se van a usar
-
+/* Ruta inicial */
+router.get('/', (req,res)=>{
+    res.send({
+        Estado: "Servidor conectado..."
+    })
+})
 //Prueba del servicio y las rutas
 router.get("/pruebaS", control.prueba);
 
