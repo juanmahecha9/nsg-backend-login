@@ -1,0 +1,17 @@
+{
+  "app": {
+    "name": "DataBase",
+    "port": 3001,
+    "bind": "0.0.0.0"
+  },
+  "database": {
+    "mongodb": {
+      "databaseName": "Tienda",
+      "url": "mongodb://localhost:27017/Tienda"
+    }
+  },
+  "access": {
+    "cookies": "'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method' ",
+    "method": " 'GET, POST, PUT, DELETE, OPTIONS' "
+  }
+}
